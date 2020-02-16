@@ -1,7 +1,7 @@
 Getting started with Terraform 
 ==============================
 
-We will deploy an EC2 with Ubuntu18.04 via terraform and we connect to it via SSH.
+We will deploy an EC2 (Ubuntu18.04) via terraform and we connect to it via SSH.
 
 ![](doc/_static/archi.png)
 
@@ -13,7 +13,7 @@ cd aws # Go to terraform directory
 terraform init # Get aws plugins
 ```
 
-Go to edit the terraform.tfvars, you need to pass the ssh Private/Public path.
+Go to edit the terraform.tfvars, you need to pass the Private/Public ssh path.
 Example : 
 
 ````hcl-terraform
@@ -37,3 +37,18 @@ Step 3:
 Test ssh connection, go to terraform.tfstate and get the value of the key : ssh_connect_cli.
 This is the command line to connect to your machine.
 
+Example:
+
+````json
+{
+  "version": 4,
+  "terraform_version": "0.12.9",
+  "serial": 5,
+  "outputs": {
+    "ssh_connect_cli": {
+      "value": "ssh -i ~/.ssh/id_rsa_aws ubuntu@ec2-xx-xx-xx-xx.eu-west-1.compute.amazonaws.com",
+      "type": "string"
+    }
+  }
+}
+````
