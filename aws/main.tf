@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_key_pair" "admin" {
   key_name   = "admin"
-  public_key = var.aws_public_key_ssh
+  public_key = file(var.aws_public_key_ssh_path)
 }
 
 resource "aws_default_vpc" "default" {

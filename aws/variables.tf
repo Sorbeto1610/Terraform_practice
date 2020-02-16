@@ -20,7 +20,12 @@ variable "tag_name" {
   type        = string
 }
 
-variable "aws_public_key_ssh" {
+variable "aws_public_key_ssh_path" {
+  description = "The key name of the Key Pair to use for the instance"
+  type        = string
+}
+
+variable "aws_private_key_ssh_path" {
   description = "The key name of the Key Pair to use for the instance"
   type        = string
 }
