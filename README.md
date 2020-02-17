@@ -11,7 +11,7 @@ Step 1:
 ```shell script
 cd terraform # Go to terraform directory
 terraform init # Get aws plugins
-mv terraform.tfvars.example terraform.tfvars
+mv terraform.tfvars.example terraform.tfvars # Rename terraform.tfvars
 ```
 
 Go to edit the terraform.tfvars, you need to pass the Private/Public ssh path.
