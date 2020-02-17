@@ -1,7 +1,7 @@
 Getting started with Terraform 
 ==============================
 
-We will deploy an EC2 (Ubuntu18.04) via terraform and we connect to it via SSH.
+We will deploy an EC2 (Ubuntu18.04) via terraform and we connect to the machine via SSH.
 
 ![](doc/_static/archi.png)
 
@@ -9,7 +9,7 @@ Step 1:
 -------
 
 ```shell script
-cd aws # Go to terraform directory
+cd terraform # Go to terraform directory
 terraform init # Get aws plugins
 ```
 
