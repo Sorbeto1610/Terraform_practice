@@ -7,7 +7,7 @@ We will deploy an EC2 (Ubuntu18.04) via terraform and we connect to the machine 
 
 Step 1:
 -------
-
+Install terraform binary [here](https://www.terraform.io/downloads.html)
 ```shell script
 cd terraform # Go to terraform directory
 terraform init # Get aws plugins
@@ -53,3 +53,5 @@ Example:
   }
 }
 ````
+
+
