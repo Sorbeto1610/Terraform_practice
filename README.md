@@ -50,7 +50,7 @@ aws configure
 And enter your access_key_id and your secret
 
 ```shell script
-cd aws # Go to terraform directory
+cd terraform # Go to terraform directory
 terraform init # Get aws plugins
 terraform plan # To get a dry run
 terraform apply # Apply creation of the infra
