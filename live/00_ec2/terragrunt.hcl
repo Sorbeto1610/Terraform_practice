@@ -4,7 +4,7 @@ terraform {
 }
 
 inputs = {
-  ami_id                    = "ami-03ef731cc103c9f09" # By default is ubuntu
+  ami_id = "ami-03ef731cc103c9f09" # By default is ubuntu
 }
 
 include {
