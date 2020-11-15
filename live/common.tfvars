@@ -1,3 +1,5 @@
-region                  = "eu-west-1"
-aws_public_key_ssh_path = "~/.ssh/id_rsa_aws.pub"
-tag_name                  = "my-esme-demo"
+# Common variables
+region       = "eu-west-1"
+project_name = "esme"
+profile      = "perso"
+service_name = "demo-esme"

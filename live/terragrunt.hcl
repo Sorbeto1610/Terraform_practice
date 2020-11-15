@@ -5,6 +5,7 @@ remote_state {
     bucket         = "camelot-terraform-backend-remote-tfstate"
     key            = "${get_env("TF_VAR_env", "dev")}-${path_relative_to_include()}/terraform.tfstate"
     region         = "eu-west-1"
+    profile        = "perso"
     encrypt        = true
     dynamodb_table = "lock_terraform"
   }
@@ -17,9 +18,8 @@ terraform {
     required_var_files = [
       "${get_parent_terragrunt_dir()}/common.tfvars"
     ]
-
-    optional_var_files = [
-      "${get_parent_terragrunt_dir()}/${get_env("TF_VAR_env", "dev")}.tfvars"
-    ]
   }
+}
+inputs = {
+  environment = get_env("TF_VAR_env", "dev")
 }
