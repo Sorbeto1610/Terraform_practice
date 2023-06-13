@@ -4,9 +4,9 @@ variable "region" {
 }
 
 variable "ami_id" {
-  description = "id of an ami by default it's ubuntu 18.04"
+  description = "id of an ami by default it's ubuntu 22.04"
   type        = string
-  default     = "ami-03ef731cc103c9f09"
+  default     = "ami-01dd271720c1ba44f"
 }
 
 variable "instance_type" {
